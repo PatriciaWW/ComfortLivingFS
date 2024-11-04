@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="../output.css">
     <style>
         nav{
-            width: 2000px;
-            padding: 10px 17px 20px 10px;
             position: relative;
             gap: 42px;
             opacity: 0px;
             background: #EFE7DD;
             text-align: end;
 
+        }
+        #hero{
+            background-image: url('../../static/images/background.jpg');
         }
         #navbar-default{
             text-align: end;
@@ -26,7 +27,6 @@
             padding: 30px 50px;
         }
         #first{
-            font-family: Baskerville Old Face;
             font-size: 18px;
             font-weight: 300;
             line-height: 20px;
@@ -137,8 +137,8 @@
     <div class="container mx-auto h-screen">
         <!-- the hero section -->
         
-            <section class="h-full bg-[url('../../static/images/design3.jpg')] bg-cover bg-no-repeat bg-center " >
-                <nav class="fixed top-0 w-full shadow-md">
+            <section id="hero" class="h-full bg-[url('../../static/images/background.jpg')] bg-cover bg-no-repeat bg-center " >
+                <nav class="fixed top-0 p-4 bg-[#EFE7DD] left-0 w-full shadow-md">
                     <div class="container mx-auto flex justify-end items-center">
                         <a href="" class="logo mr-auto">
                             <img src="../../static/images/logo.png" class="image" alt="Logo" />
@@ -152,7 +152,7 @@
                                     <a href="#about" class="text-[#764B36] pt-[30px]">ABOUT</a>
                                 </li>
                                 <li>
-                                    <a href="#products" class="text-[#764B36]  pt-[30px]">PRODUCTS</a>
+                                    <a href="page2.html" class="text-[#764B36]  pt-[30px]">PRODUCTS</a>
                                 </li>
                                 <li>
                                     <a href="#contact" class="text-[#764B36] pt-[30px]">CONTACTS</a>
@@ -171,7 +171,7 @@
                         <span class="w-[30ch]">COMFORT LIVING FURNITURE STORE</span>
                     </h1>
               
-                    <p class="text-[#764B36] font-['Baskerville'] mx-10" id="first" >Elevate your home with Comfort Livings elegant and cozy 
+                    <p class="text-[#764B36] font-['Baskerville'] pl-4 mx-10" id="first" >Elevate your home with Comfort Livings elegant and cozy 
                         furniture. Discover beautifully crafted pieces designed to
                         bring comfort and style to every room.
                     </p>
@@ -183,10 +183,10 @@
                 
             </section>
             <section class="" id="about">
-                <div class="text-[#000000] font-[Montserrat] text-[40px]">
+                <div class="text-[#000000] text-[40px]">
                     <p id="contact" class="pl-[50px]">. About Us .</p>
                 </div>
-                <p class="text-[#764B36] font-['Baskerville'] font-bold" id="giving">... It’s  Giving Comfort</p>
+                <p class="text-[#764B36] font-bold" id="giving">... It’s  Giving Comfort</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
                     <article class="max-w-sm bg-[#F9F5F1] rounded-md  w-[75%] mx-auto flex flex-col items-center" id="card1">
                         <img src="../../static/images/card1.png" alt="Comfortable living room couch" class="h-[120px] w-[120px]" id="couch">
@@ -201,7 +201,7 @@
                         </p>
                     </article>
                     <article class="max-w-sm bg-[#F9F5F1] rounded-md w-[75%] mx-auto flex flex-col items-center" id="card1">
-                        <img src="../../static/images/image.png" alt="Comfortable living room couch" class="h-[120px] w-[120px]" id="couch">
+                        <img src="../../static/images/chair.png" alt="Comfortable living room couch" class="h-[120px] w-[120px]" id="couch">
                         <p class="w-[75%] p-4 leading-normal text-center" id="content1">
                             Comfort living brings <span class="text-[#98632B]">solace</span> by allowing individuals to curate their environments with thoughtfully chosen design                        </p>
                     </article>
@@ -235,30 +235,30 @@
                         </div>
         
                         <!-- Categories list -->
-                        <div class="space-y-4 p-4">
-                            <div class="flex justify-between items-center border-b py-2">
-                                <span class="text-lg font-medium text-gray-700">OFFICE</span>
-                                <span class="text-gray-500">200+</span>
+                        <div class="space-y-4 p-4 w-[450px]">
+                            <div class="flex justify-between items-center border-b border-black py-2">
+                                <span class="text-lg text-[#764B36] font-medium">OFFICE</span>
+                                <span class="text-black">200+</span>
                             </div>
-                            <div class="flex justify-between items-center border-b py-2">
-                                <span class="text-lg font-medium text-gray-700">KITCHEN</span>
-                                <span class="text-gray-500">200+</span>
+                            <div class="flex justify-between items-center border-b border-black py-2">
+                                <span class="text-lg font-medium text-[#764B36]">KITCHEN</span>
+                                <span class="text-black">200+</span>
                             </div>
-                            <div class="flex justify-between items-center border-b py-2">
-                                <span class="text-lg font-medium text-gray-700">BEDROOM</span>
-                                <span class="text-gray-500">200+</span>
+                            <div class="flex justify-between items-center border-b border-black py-2">
+                                <span class="text-lg font-medium text-[#764B36]">BEDROOM</span>
+                                <span class="text-black">200+</span>
                             </div>
-                            <div class="flex justify-between items-center border-b py-2">
-                                <span class="text-lg font-medium text-gray-700">LIVING ROOM</span>
-                                <span class="text-gray-500">200+</span>
+                            <div class="flex justify-between items-center border-black border-b py-2">
+                                <span class="text-lg font-medium text-[#764B36]">LIVING ROOM</span>
+                                <span class="text-black">200+</span>
                             </div>
-                            <div class="flex justify-between items-center border-b py-2">
-                                <span class="text-lg font-medium text-gray-700">DINING</span>
-                                <span class="text-gray-500">200+</span>
+                            <div class="flex justify-between items-center border-black border-b py-2">
+                                <span class="text-lg font-medium text-[#764B36]">DINING</span>
+                                <span class="text-black">200+</span>
                             </div>
-                            <div class="flex justify-between items-center border-b py-2">
-                                <span class="text-lg font-medium text-gray-700">MATTRESSES</span>
-                                <span class="text-gray-500">200+</span>
+                            <div class="flex justify-between items-center border-black border-b py-2">
+                                <span class="text-lg font-medium text-[#764B36]">MATTRESSES</span>
+                                <span class="text-black">200+</span>
                             </div>
                         </div>
         
@@ -348,7 +348,7 @@
             </section>
 
             <section class="bg-[#EFE7DD]" id="contact">
-                <div class="text-[#000000] font-[Montserrat] text-[40px] p-8">
+                <div class="text-[#000000] text-[40px] p-8">
                     <p id="contact">. Contact Us .</p>
                 </div>
                 <div class="container mx-auto flex justify-center p-4">
@@ -396,20 +396,20 @@
                         </div>
                         
                 
-                        <div class="flex flex-col items-center space-x-8">
+                        <div class="flex flex-col items-center pl-8 space-x-8">
                             <p class="font-bold">Comfort Living</p>
-                            <p><a href="#">Login</a></p>
-                            <p><a href="#">Register</a></p>
+                            <p><a href="login.html">Login</a></p>
+                            <p><a href="register.html">Register</a></p>
                             <p><a href="#">Home</a></p>
-                            <p><a href="#">Your Cart</a></p>
+                            <p><a href="page2.html">Your Cart</a></p>
                         </div>
-                        <div class="flex flex-col items-center space-x-8">
+                        <div class="flex flex-col items-center pl-8 space-x-8">
                             <p class="font-bold">Product Categories</p>
-                            <p><a href="#">Office</a></p>
-                            <p><a href="#">Kitchen</a></p>
-                            <p><a href="#">Living Room</a></p>
-                            <p><a href="#">Mattresses</a></p>
-                            <p><a href="#">Dining Room</a></p>
+                            <p><a href="page2.html">Office</a></p>
+                            <p><a href="page2.html">Kitchen</a></p>
+                            <p><a href="page2.html">Living Room</a></p>
+                            <p><a href="page2.html">Mattresses</a></p>
+                            <p><a href="page2.html">Dining Room</a></p>
                         </div>
                         <div class="flex flex-col items-center space-x-8">
                             <p class="font-bold">Resources</p>
