@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container mx-auto h-screen">
-        <section class="h-full bg-[#EFE7DD]">
+        <section class=" bg-[#EFE7DD]">
             <nav class="fixed p-6 top-0 left-0 w-full shadow-md bg-[#FFFFFF99] z-10 text-end h-[80px]">
                 <div class="container mb-2 mx-auto flex justify-end items-center">
                     <a href="" class="logo mr-auto">
@@ -18,8 +18,8 @@
                         <ul class="font-medium flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse ">
                             <li>
                                 <div class="flex relative justify-between px-4">
-                                    <input type="text" placeholder="Search..." class="placeholder-[#764B36] p-2 g-[#FFFFFF] border border-[#00000099] rounded w-[90px] ">
-                                    <img src="../../static/images/search1.png" alt="" class="absolute right-5 top-2 w-[22px] h-[22px] mb-3 ">
+                                    <input type="text" placeholder="Search..." class="placeholder-[#764B36] p-2 g-[#FFFFFF] border border-[#00000099] rounded w-[full] ">
+                                    <img src="../../static/images/search1.png" alt="" class="absolute right-6 top-2 w-[22px] h-[22px] mb-3 ">
                                 </div>
                             </li>
                             <li>
@@ -39,37 +39,343 @@
                 </div>
             </nav>
             <div class="flex justify-between items-center pt-[90px] px-2">
-                <div class="flex relative justify-between">
-                    <p class="text-[#764B36]">OFFICE</p>
-                    <img src="../../static/images/image.png" alt="" class=" w-[15px] h-[10px] ml-2 mt-2 top-0">
+                <a href="">
+                    <div class="flex relative justify-between">
+                        <p class="text-[#764B36]">OFFICE</p>
+                        <img src="../../static/images/image.png" alt="" class=" w-[15px] h-[10px] ml-2 mt-2 top-0">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="flex relative justify-between">
+                        <p class="text-[#764B36]">OFFICE</p>
+                        <img src="../../static/images/image.png" alt="" class=" w-[15px] h-[10px] ml-2 mt-2 top-0">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="flex relative justify-between">
+                        <p class="text-[#764B36]">BEDROOM</p>
+                        <img src="../../static/images/image.png" alt="" class="w-[15px] h-[10px] ml-2 mt-2 top-0">
+                    </div>
+                </a>
+                
+                <a href="">
+                    <div class="flex relative justify-between">
+                        <p class="text-[#764B36]">LIVING ROOM</p>
+                        <img src="../../static/images/image.png" alt="" class="w-[15px] h-[10px] ml-2 mt-2 top-0">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="flex relative justify-between">
+                        <p class="text-[#764B36]">DINING</p>
+                        <img src="../../static/images/image.png" alt="" class="w-[15px] h-[10px] ml-2 mt-2 top-0">
+                    </div>
+                </a>
+                <a href="">
+                    <div class="flex relative justify-between">
+                        <p class="text-[#764B36]">MATTRESSES</p>
+                        <img src="../../static/images/image.png" alt="" class="w-[15px] h-[10px] ml-2 mt-2 top-0">
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-screen-lg ml-[100px] mt-[50px] pb-[50px]" style="gap: 30px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+                <!-- Repeat this div 9 times for 3x3 layout -->
+                <div style="width: 330px; border: 1px solid #ddd; background-color:#FFFFFF99; border-radius: 10px; font-family: Montserrat, sans-serif; text-align: center;">
+                    <div style="position: relative;">
+                        <img src="../../static/images/d4coffee-table.jpg" alt="Coffee table" style="width: 100%; height: auto; border-radius: 5px;">
+                        <div style="position: absolute; top: 10px; left: 10px; background-color:#FFFFFF99; color: #764B36; padding: 5px; font-size: 14px; border-radius: 5px;">
+                            -15%
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background-color:#FFFFFF99; padding: 5px; border-radius: 5px; color: #764B36; font-size: 18px;">
+                            <img src="../../static/images/cart2.png" alt="" class="h-[22px] w-[22px]">
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;" class="flex justify-between p-4">
+                        <div class="flex-row">
+                            <h2 style="font-size: 18px; margin: 5px 0;">Coffee Table</h2>
+                            <p style="color:#764B36; font-size: 14px; margin: 5px 0;">KES 30,500</p>
+                        </div>
+                        <div class="flex-row">
+                            <p style="font-size: 14px;">Available colors:</p>
+                            <div style="display: flex; justify-content: center; gap: 5px;">
+                                <span style="width: 15px; height: 15px; background-color: rgb(231, 224, 225); border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: rgb(26, 17, 17); border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: rgb(3, 40, 45); border-radius: 50%; display: inline-block;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="flex relative justify-between">
-                    <p class="text-[#764B36]">KITCHEN</p>
-                    <img src="../../static/images/image.png" alt="" class="w-[15px] h-[10px] ml-2 mt-2 top-0">
+                <!-- Repeat the above div 8 more times -->
+                <div style="width: 330px; border: 1px solid #ddd; background-color:#FFFFFF99; border-radius: 10px; font-family: Montserrat, sans-serif; text-align: center;">
+                    <div style="position: relative;">
+                        <img src="../../static/images/d6dining-table-4786765_1280.jpg" alt="Dining Table" style="width: 100%; height: auto; border-radius: 5px;">
+                        <div style="position: absolute; top: 10px; left: 10px; background-color:#FFFFFF99; color: #764B36; padding: 5px; font-size: 14px; border-radius: 5px;">
+                            -10%
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background-color:#FFFFFF99; padding: 5px; border-radius: 5px; color: #764B36; font-size: 18px;">
+                            <img src="../../static/images/cart2.png" alt="" class="h-[22px] w-[22px]">
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;" class="flex justify-between p-4">
+                        <div class="flex-row">
+                            <h2 style="font-size: 18px; margin: 5px 0;">Dining Table</h2>
+                            <p style="color:#764B36; font-size: 14px; margin: 5px 0;">KES 10,000</p>
+                        </div>
+                        <div class="flex-row">
+                            <p style="font-size: 14px;">Available colors:</p>
+                            <div style="display: flex; justify-content: center; gap: 5px;">
+                                <span style="width: 15px; height: 15px; background-color: rgb(241, 231, 233); border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: brown; border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: rgb(6, 4, 0); border-radius: 50%; display: inline-block;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="flex relative justify-between">
-                    <p class="text-[#764B36]">BEDROOM</p>
-                    <img src="../../static/images/image.png" alt="" class="w-[15px] h-[10px] ml-2 mt-2 top-0">
+                <div style="width: 330px; border: 1px solid #ddd; background-color:#FFFFFF99; border-radius: 10px; font-family: Montserrat, sans-serif; text-align: center;">
+                    <div style="position: relative;">
+                        <img src="../../static/images/d4dining-set.jpg" alt="Dining Set" style="width: 100%; height: auto; border-radius: 5px;">
+                        <div style="position: absolute; top: 10px; left: 10px; background-color:#FFFFFF99; color: #764B36; padding: 5px; font-size: 14px; border-radius: 5px;">
+                            -5%
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background-color:#FFFFFF99; padding: 5px; border-radius: 5px; color: #764B36; font-size: 18px;">
+                            <img src="../../static/images/cart2.png" alt="" class="h-[22px] w-[22px]">
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 10px;" class="flex justify-between p-4">
+                        <div class="flex-row">
+                            <h2 style="font-size: 18px; margin: 5px 0;">Dining Set</h2>
+                            <p style="color:#764B36; font-size: 14px; margin: 5px 0;">KES 45,000</p>
+                        </div>
+                        <div class="flex-row">
+                            <p style="font-size: 14px;">Available colors:</p>
+                            <div style="display: flex; justify-content: center; gap: 5px;">
+                                <span style="width: 15px; height: 15px; background-color: rgb(244, 240, 240); border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: brown; border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: rgb(135, 153, 193); border-radius: 50%; display: inline-block;"></span>
+                        </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="flex relative justify-between">
-                    <p class="text-[#764B36]">LIVING ROOM</p>
-                    <img src="../../static/images/image.png" alt="" class="w-[15px] h-[10px] ml-2 mt-2 top-0">
+                <div style="width: 330px; border: 1px solid #ddd; background-color:#FFFFFF99; border-radius: 10px; font-family: Montserrat, sans-serif; text-align: center;">
+                    <div style="position: relative;">
+                        <img src="../../static/images/d7two-seater.jpg" alt="Two Seater" style="width: 100%; height: auto; border-radius: 5px;">
+                        <div style="position: absolute; top: 10px; left: 10px; background-color:#FFFFFF99; color: #764B36; padding: 5px; font-size: 14px; border-radius: 5px;">
+                            -10%
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background-color:#FFFFFF99; padding: 5px; border-radius: 5px; color: #764B36; font-size: 18px;">
+                            <img src="../../static/images/cart2.png" alt="" class="h-[22px] w-[22px]">
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;" class="flex justify-between p-4">
+                        <div class="flex-row">
+                            <h2 style="font-size: 18px; margin: 5px 0;">Two Seater Couch</h2>
+                            <p style="color:#764B36; font-size: 14px; margin: 5px 0;">KES 23,500</p>
+                        </div>
+                        <div class="flex-row">
+                            <p style="font-size: 14px;">Available colors:</p>
+                            <div style="display: flex; justify-content: center; gap: 5px;">
+                                <span style="width: 15px; height: 15px; background-color: rgb(142, 129, 131); border-radius: 50%; display: inline-block;"></span>
+                            <span style="width: 15px; height: 15px; background-color: rgb(2, 45, 15); border-radius: 50%; display: inline-block;"></span>
+                            <span style="width: 15px; height: 15px; background-color: rgb(62, 3, 8); border-radius: 50%; display: inline-block;"></span>
+                        </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="flex relative justify-between">
-                    <p class="text-[#764B36]">DINING</p>
-                    <img src="../../static/images/image.png" alt="" class="w-[15px] h-[10px] ml-2 mt-2 top-0">
+                <div style="width: 330px; border: 1px solid #ddd; background-color:#FFFFFF99; border-radius: 10px; font-family: Montserrat, sans-serif; text-align: center;">
+                    <div style="position: relative;">
+                        <img src="../../static/images/d5couch.jpg" alt="Coven Couch" style="width: 100%; height: auto; border-radius: 5px;">
+                        <div style="position: absolute; top: 10px; left: 10px; background-color:#FFFFFF99; color: #764B36; padding: 5px; font-size: 14px; border-radius: 5px;">
+                            -5%
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background-color:#FFFFFF99; padding: 5px; border-radius: 5px; color: #764B36; font-size: 18px;">
+                            <img src="../../static/images/cart2.png" alt="" class="h-[22px] w-[22px]">
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;" class="flex justify-between p-4">
+                        <div class="flex-row">
+                            <h2 style="font-size: 18px; margin: 5px 0;">Coven Couch</h2>
+                            <p style="color:#764B36; font-size: 14px; margin: 5px 0;">KES 50,500</p>
+                        </div>
+                        <div class="flex-row">
+                            <p style="font-size: 14px;">Available colors:</p>
+                            <div style="display: flex; justify-content: center; gap: 5px;">
+                                <span style="width: 15px; height: 15px; background-color: rgb(10, 8, 8); border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: brown; border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: rgb(57, 56, 54); border-radius: 50%; display: inline-block;"></span>
+                        </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                <div class="flex relative justify-between">
-                    <p class="text-[#764B36]">MATTRESSES</p>
-                    <img src="../../static/images/image.png" alt="" class="w-[15px] h-[10px] ml-2 mt-2 top-0">
+                <div style="width: 330px; border: 1px solid #ddd; background-color:#FFFFFF99; border-radius: 10px; font-family: Montserrat, sans-serif; text-align: center;">
+                    <div style="position: relative;">
+                        <img src="../../static/images/d4couch1.jpg" alt="Fortven Couch" style="width: 100%; height: auto; border-radius: 5px;">
+                        <div style="position: absolute; top: 10px; left: 10px; background-color:#FFFFFF99; color: #764B36; padding: 5px; font-size: 14px; border-radius: 5px;">
+                            -7%
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background-color:#FFFFFF99; padding: 5px; border-radius: 5px; color: #764B36; font-size: 18px;">
+                            <img src="../../static/images/cart2.png" alt="" class="h-[22px] w-[22px]">
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 10px;" class="flex justify-between p-4">
+                        <div class="flex-row">
+                            <h2 style="font-size: 18px; margin: 5px 0;">Fortven Couch</h2>
+                            <p style="color:#764B36;  font-size: 14px; margin: 5px 0;">KES 55,000</p>
+                        </div>
+                        <div class="flex-row">
+                            <p style="font-size: 14px;">Available colors:</p>
+                            <div style="display: flex; justify-content: center; gap: 5px;">
+                                <span style="width: 15px; height: 15px; background-color: rgb(226, 88, 18); border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: rgb(185, 182, 183); border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: rgb(192, 201, 14); border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: rgb(119, 15, 15); border-radius: 50%; display: inline-block;"></span>
+                             </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div style="width: 330px; border: 1px solid #ddd; background-color:#FFFFFF99; border-radius: 10px; font-family: Montserrat, sans-serif; text-align: center;">
+                    <div style="position: relative;">
+                        <img src="../../static/images/d3chair.jpg" alt="Comfort Haven Chair" style="width: 100%; height: auto; border-radius: 5px;">
+                        <div style="position: absolute; top: 10px; left: 10px; background-color:#FFFFFF99; color: #764B36; padding: 5px; font-size: 14px; border-radius: 5px;">
+                            -5%
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background-color:#FFFFFF99; padding: 5px; border-radius: 5px; color: #764B36; font-size: 18px;">
+                            <img src="../../static/images/cart2.png" alt="" class="h-[22px] w-[22px]">
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;" class="flex justify-between p-4">
+                        <div class="flex-row">
+                            <h2 style="font-size: 18px; margin: 5px 0;">Haven Chair</h2>
+                            <p style="color:#764B36; font-size: 14px; margin: 5px 0;">KES 30,000</p>
+                        </div>
+                        <div class="flex-row">
+                            <p style="font-size: 14px;">Available colors:</p>
+                            <div style="display: flex; justify-content: center; gap: 5px;">
+                                <span style="width: 15px; height: 15px; background-color: rgb(226, 88, 18); border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: rgb(119, 15, 15); border-radius: 50%; display: inline-block;"></span>
+                             </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div style="width: 330px; border: 1px solid #ddd; background-color:#FFFFFF99; border-radius: 10px; font-family: Montserrat, sans-serif; text-align: center;">
+                    <div style="position: relative;">
+                        <img src="../../static/images/d1bed.jpg" style="width: 100%; height: auto; border-radius: 5px;">
+                        <div style="position: absolute; top: 10px; left: 10px; background-color:#FFFFFF99; color:#764B36; padding: 5px; font-size: 14px; border-radius: 5px;">
+                            -20%
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background-color:#FFFFFF99; padding: 5px; border-radius: 5px; color: #764B36; font-size: 18px;">
+                            <img src="../../static/images/cart2.png" alt="" class="h-[22px] w-[22px]">
+                        </div>
+                        <div style="margin-top: 10px;" class="flex justify-between p-4">
+                            <div class="flex-row">
+                                <h2 style="font-size: 18px; margin: 5px 0;">Bed</h2>
+                                <p style="color:#764B36; font-size: 14px; margin: 5px 0;">KES 20,000</p>
+                            </div>
+                            <div class="flex-row">
+                                <p style="font-size: 14px;">Available colors:</p>
+                                <div style="display: flex; justify-content: center; gap: 5px;">
+                                    <span style="width: 15px; height: 15px; background-color: rgb(250, 249, 249); border-radius: 50%; display: inline-block;"></span>
+                                    <span style="width: 15px; height: 15px; background-color: rgba(86, 60, 60, 0.128); border-radius: 50%; display: inline-block;"></span>
+                                    <span style="width: 15px; height: 15px; background-color: rgb(67, 49, 52); border-radius: 50%; display: inline-block;"></span>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div style="width: 330px; border: 1px solid #ddd; background-color:#FFFFFF99; border-radius: 10px; margin: 10px; font-family: Montserrat, sans-serif; text-align: center;">
+                    <div style="position: relative;">
+                        <img src="../../static/images/d2bedstand.jpg" alt="Bed stand" style="width: 100%; height: auto; border-radius: 5px;">
+                        <div style="position: absolute; top: 10px; left: 10px; background-color:#FFFFFF99; color: #764B36; padding: 5px; font-size: 14px; border-radius: 5px;">
+                            -3%
+                        </div>
+                        <div style="position: absolute; top: 10px; right: 10px; background-color:#FFFFFF99; padding: 5px; border-radius: 5px; color: #764B36; font-size: 18px;">
+                            <img src="../../static/images/cart2.png" alt="" class="h-[22px] w-[22px]">
+                        </div>
+                    </div>
+                    <div style="margin-top: 10px;" class="flex justify-between p-4">
+                        <div class="flex-row">
+                            <h2 style="font-size: 18px; margin: 5px 0;">Bed Stand</h2>
+                            <p style="color:#764B36; font-size: 14px; margin: 5px 0;">KES 10,500</p>
+                        </div>
+                        <div class="flex-row">
+                            <p style="font-size: 14px;">Available colors:</p>
+                            <div style="display: flex; justify-content: center; gap: 5px;">
+                                <span style="width: 15px; height: 15px; background-color: rgb(250, 249, 249); border-radius: 50%; display: inline-block;"></span>
+                                <span style="width: 15px; height: 15px; background-color: rgba(86, 60, 60, 0.128); border-radius: 50%; display: inline-block;"></span>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
 
         </section>
 
-        <footer>
-
+        <footer class="bg-[#F6EFE6] shadow-xl p-6">
+            <div class="flex flex-col space-y-4 pb-[150px]">
+                <!-- Navigation Links Row -->
+                <div class="flex grid grid-cols-4 space-x-4">
+                    <!-- Social Links Row -->
+                    <div class="flex-row">
+                        <div class="flex items-center justify-start pl-[80px] space-x-4">
+                            <a href="https://x.com" aria-label="Twitter">
+                                <img src="../../static/images/twitter (1).png" alt="Twitter" class="h-[20px]  w-[20px]">
+                            </a>
+                            <a href="https://www.instagram.com/" aria-label="Instagram">
+                                <img src="../../static/images/instagram.png" alt="Instagram" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="https://www.youtube.com/" aria-label="YouTube">
+                                <img src="../../static/images/youtube.png" alt="YouTube" class="h-[20px] w-[20px]">
+                            </a>
+                            <a href="https://www.linkedin.com/" aria-label="LinkedIn">
+                                <img src="../../static/images/linkedin-logo.png" alt="LinkedIn" class="h-[20px] w-[20px]">
+                            </a>
+    
+                        </div>
+                        <!-- Logo Row -->
+                        <div class="flex items-center justify-center">
+                            <img src="../../static/images/logo.png" class="h-[200px] w-[200px]" alt="Logo" />
+                        </div>
+                    </div>
+                    
+            
+                    <div class="flex flex-col pl-8 mr-4">
+                        <p class="font-bold pb-5">Comfort Living</p>
+                        <p><a href="login.html">Login</a></p>
+                        <p><a href="register.html">Register</a></p>
+                        <p><a href="#">Home</a></p>
+                        <p><a href="page2.html">Your Cart</a></p>
+                    </div>
+                    <div class="flex flex-col  pl-8 mr-[100px]">
+                        <p class="font-bold pb-5">Product Categories</p>
+                        <p><a href="page2.html">Office</a></p>
+                        <p><a href="page2.html">Kitchen</a></p>
+                        <p><a href="page2.html">Living Room</a></p>
+                        <p><a href="page2.html">Mattresses</a></p>
+                        <p><a href="page2.html">Dining Room</a></p>
+                    </div>
+                    <div class="flex flex-col ">
+                        <p class="font-bold pb-5">Resources</p>
+                        <p><a href="#about">About</a></p>
+                        <p><a href="#contact">Contact Us</a></p>
+                        <p><a href="https://drive.google.com/file/d/1VByWQsKd0BADC2I9FLVa-Diw30gxhxQJ/view?ts=67122416">Online Catalogue</a></p>
+                        <p><a href="#">FAQ</a></p>
+                        <p><a href="#">Support</a></p>
+                    </div>
+                </div>
+        
+            </div>
         </footer>
 
     </div>
