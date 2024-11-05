@@ -1,13 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
 body{
     font-family: "Montserrat", serif;
 }
-h1{
-    font-family: "Baskervville", serif;
+h1,button{
+    font-family: "Baskervville", sans-serif;
 }
