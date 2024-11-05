@@ -5,11 +5,29 @@
     <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../output.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        .swiper-wrapper {
+      width: 100%;
+      height: max-content !important;
+      padding-bottom: 64px !important;
+      -webkit-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+      position: relative;
+      }
+      .swiper-pagination-current {
+      color: #764B36 !important;
+      }
+      .swiper-pagination-total {
+      color: #764B36;
+      }
+    </style>
 </head>
 <body>
     <div class="container mx-auto h-screen">
         <section class=" bg-[#EFE7DD]">
-            <nav class="fixed p-6 top-0 left-0 w-full shadow-md bg-[#FFFFFF99] z-10 text-end h-[80px]">
+            <nav class="fixed z-1000 p-6 top-0 left-0 w-full shadow-md bg-[#FFFFFF99] z-10 text-end h-[80px]">
                 <div class="container mb-2 mx-auto flex justify-end items-center">
                     <a href="" class="logo mr-auto">
                         <img src="../../static/images/logo.png" class="w-[90px] h-[90px] absolute top-0" alt="Logo" />
@@ -76,6 +94,37 @@
                         <img src="../../static/images/image.png" alt="" class="w-[15px] h-[10px] ml-2 mt-2 top-0">
                     </div>
                 </a>
+            </div>
+
+            <div class="w-[700px] relative mx-auto bg-[#EFE7DD] m-8 mt-[60px]">
+                <div class="swiper fraction-slide-carousel swiper-container relative">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <div class="rounded-2xl h-96 flex justify-center items-center">
+                    <img src="../../static/images/carousel2.avif" alt="" class="w-[100%] h-[100%]">
+                </div>
+                </div>
+                <div class="swiper-slide">
+                <div class="rounded-2xl h-96 flex justify-center items-center">
+                    <img src="../../static/images/carousel3.avif" alt="" class="w-[100%] h-[100%]">
+                </div>
+                </div>
+                <div class="swiper-slide">
+                <div class="rounded-2xl h-96 flex justify-center items-center">
+                    <img src="../../static/images/carousel4.avif" alt="" class="w-[100%] h-[100%]">
+                </div>
+                </div>
+                </div>
+                <div class="flex items-center gap-8 lg:justify-start justify-center">
+                <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5 bg-[#FFFFFF99]">
+    
+                </button>
+                <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center  !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5 bg-[#FFFFFF99]">
+    
+                </button>
+                </div>
+                <div class="swiper-pagination"></div>
+                </div>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-screen-lg ml-[100px] mt-[50px] pb-[50px]" style="gap: 30px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
@@ -354,7 +403,7 @@
                         <p class="font-bold pb-5">Comfort Living</p>
                         <p><a href="login.html">Login</a></p>
                         <p><a href="register.html">Register</a></p>
-                        <p><a href="#">Home</a></p>
+                        <p><a href="page1.html">Home</a></p>
                         <p><a href="page2.html">Your Cart</a></p>
                     </div>
                     <div class="flex flex-col  pl-8 mr-[100px]">
@@ -367,7 +416,7 @@
                     </div>
                     <div class="flex flex-col ">
                         <p class="font-bold pb-5">Resources</p>
-                        <p><a href="#about">About</a></p>
+                        <p><a href="page1.html#about">About</a></p>
                         <p><a href="#contact">Contact Us</a></p>
                         <p><a href="https://drive.google.com/file/d/1VByWQsKd0BADC2I9FLVa-Diw30gxhxQJ/view?ts=67122416">Online Catalogue</a></p>
                         <p><a href="#">FAQ</a></p>
@@ -379,6 +428,26 @@
         </footer>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".fraction-slide-carousel", {
+        loop: true,
+        fraction: true,
+        navigation: {
+          nextEl: ".fraction-slide-carousel .swiper-button-next",
+          prevEl: ".fraction-slide-carousel .swiper-button-prev",
+        },
+        pagination: {
+          el: '.fraction-slide-carousel .swiper-pagination',
+          type: 'fraction',
+          formatFractionCurrent: function(number) {
+            return number;
+          }
+        },
+        });
+    </script>
+    
     
 </body>
 </html>

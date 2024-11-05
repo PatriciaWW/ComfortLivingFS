@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../output.css">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <style>
         nav{
             position: relative;
@@ -12,6 +14,7 @@
             opacity: 0px;
             background: #EFE7DD;
             text-align: end;
+            z-index: 1000;
 
         }
         #hero{
@@ -131,6 +134,61 @@
     
         
         }
+        .profile-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem; /* Adds spacing between each card to prevent overlap */
+        padding: 2rem;
+        }
+
+    .profile-img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        transition: box-shadow 0.3s ease-in-out;
+        border-radius: 1.5rem;
+    }
+
+    .profile-img:hover {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(239, 231, 221, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .group:hover .overlay {
+        opacity: 1;
+    }
+
+    .overlay-text {
+        color: black;
+        font-size: 1.25rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .swiper-wrapper {
+      width: 100%;
+      height: max-content !important;
+      padding-bottom: 64px !important;
+      -webkit-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+      position: relative;
+      }
+      .swiper-pagination-current {
+      color: #764B36 !important;
+      }
+      .swiper-pagination-total {
+      color: #764B36;
+      }
+
     </style>
 </head>
 <body>
@@ -332,16 +390,121 @@
                     </a>
                     
                 </div>
+
+                <!--HTML CODE-->
+                <div class="w-[700px] relative mx-auto bg-[#EFE7DD] m-8 mt-[60px]">
+                    <div class="swiper fraction-slide-carousel swiper-container relative">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    <div class="rounded-2xl h-96 flex justify-center items-center">
+                        <img src="../../static/images/carousel2.avif" alt="" class="w-[100%] h-[100%]">
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                    <div class="rounded-2xl h-96 flex justify-center items-center">
+                        <img src="../../static/images/carousel3.avif" alt="" class="w-[100%] h-[100%]">
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                    <div class="rounded-2xl h-96 flex justify-center items-center">
+                        <img src="../../static/images/carousel4.avif" alt="" class="w-[100%] h-[100%]">
+                    </div>
+                    </div>
+                    </div>
+                    <div class="flex items-center gap-8 lg:justify-start justify-center">
+                    <button id="slider-button-left" class="swiper-button-prev group !p-2 flex justify-center items-center !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !left-5 bg-[#FFFFFF99]">
+                    </button>
+                    <button id="slider-button-right" class="swiper-button-next group !p-2 flex justify-center items-center  !w-12 !h-12 transition-all duration-500 rounded-full !top-2/4 !-translate-y-8 !right-5 bg-[#FFFFFF99]">
+        
+                    </button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
             
 
             </section>
 
-            <section id="team">
+            <!-- The Team -->
+            <p class="bg-[#EFE7DD] text-black text-[40px] p-6 pl-[50px]">.Meet the team.</p>
+            <section class="grid grid-cols-3 pt-6 pl-6 pb-11 bg-[#EFE7DD]" id="team">
                 <div>
+                    <div class="relative group z-1">
+                        <img src="../../static/images/eugene.jpeg" alt=""
+                            class="mt-60 hover:shadow-lg dark:hover:shadow-black/30 max-w-xs transition duration-300 ease-in-out rounded-3xl"
+                            style="display: block; margin-left: auto; margin-right: auto;">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-[#EFE7DD] bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-black text-xl font-bold">Eugene Gakonyo <br>Front End Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="relative group z-1">
+                        <img src="../../static/images/tamara4.jpg" alt=""
+                            class="mt-20 hover:shadow-lg dark:hover:shadow-black/30 max-w-xs transition duration-300 ease-in-out rounded-3xl"
+                            style="display: block; margin-left: auto; margin-right: auto;">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-[#EFE7DD] bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-black text-xl font-bold">Tamara Zawadi <br>Front End Developer</span>
+                        </div>
+                    </div>
 
                 </div>
-               
+                <div>
+                    <div class="relative group z-1">
+                        <img src="../../static/images/patricia3.jpg" alt=""
+                            class="hover:shadow-lg dark:hover:shadow-black/30 max-w-xs transition duration-300 ease-in-out rounded-3xl"
+                            style="display: block; margin-left: auto; margin-right: auto;">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-[#EFE7DD] bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-black text-xl font-bold">Patricia Wachira<br>Full Stack Developer <br>Group Lead</span>
+                        </div>
+                    </div>
 
+                    <div class="relative group z-1">
+                        <img src="../../static/images/ephraim.png" alt=""
+                            class="mt-20 hover:shadow-lg dark:hover:shadow-black/30 max-w-xs transition duration-300 ease-in-out rounded-3xl"
+                            style="display: block; margin-left: auto; margin-right: auto;">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-[#EFE7DD] bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-black text-xl font-bold">Ephraim Shikanga<br>Full Stack Developer <br>Mentor </span>
+                        </div>
+                    </div>
+
+                    <div class="relative group z-1">
+                        <img src="../../static/images/anjelo.jpeg" alt=""
+                            class="mt-20 hover:shadow-lg dark:hover:shadow-black/30 max-w-xs transition duration-300 ease-in-out rounded-3xl"
+                            style="display: block; margin-left: auto; margin-right: auto;">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-[#EFE7DD] bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-black text-xl font-bold">Anjelo Oyolla<br>Full Stack Developer</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="relative group z-1">
+                        <img src="../../static/images/emmanuel.jpeg" alt=""
+                            class="mt-60 hover:shadow-lg dark:hover:shadow-black/30 max-w-xs transition duration-300 ease-in-out rounded-3xl"
+                            style="display: block; margin-left: auto; margin-right: auto;">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-[#EFE7DD] bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-black text-xl font-bold">Emmanuel Kamande <br>UI/UX Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="relative group z-1">
+                        <img src="../../static/images/philip.jpeg" alt=""
+                            class="mt-20 hover:shadow-lg dark:hover:shadow-black/30 max-w-xs transition duration-300 ease-in-out rounded-3xl"
+                            style="display: block; margin-left: auto; margin-right: auto;">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-[#EFE7DD] bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <span class="text-black text-xl font-bold">Philip<br>Front End Developer</span>
+                        </div>
+                    </div>
+
+                </div>
             </section>
             <section id="collaborators">
                 <div class="h-[150px] bg-[#FFFFFF99] flex justify-center items-center">
@@ -428,6 +591,25 @@
         </footer>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".fraction-slide-carousel", {
+        loop: true,
+        fraction: true,
+        navigation: {
+          nextEl: ".fraction-slide-carousel .swiper-button-next",
+          prevEl: ".fraction-slide-carousel .swiper-button-prev",
+        },
+        pagination: {
+          el: '.fraction-slide-carousel .swiper-pagination',
+          type: 'fraction',
+          formatFractionCurrent: function(number) {
+            return number;
+          }
+        },
+        });
+    </script>
     
 </body>
 </html>
